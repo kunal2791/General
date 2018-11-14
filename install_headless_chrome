@@ -1,0 +1,36 @@
+Install headless chrome on Amazon Linux
+
+525      mkdir my_project
+526      cd my_project
+527      npm i puppeteer
+528      cd node_modules/puppeteer/
+529      cd .local-chromium/linux-588429/chrome-linux
+530      ldd --info
+531      man ldd
+532      ldd chrome|grep not
+533      sudo yum install ups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango
+534      t
+535      ldd chrome|grep not
+536      cd my_project/node_modules/puppeteer/
+537      ls
+538      ls -a
+539      cd .local-chromium/linux-588429/chrome-linux/
+540      ldd chrome|grep not
+541      sudo yum install ups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango
+542      ldd chrome|grep not
+543      sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/atk-2.22.0-3.el7.x86_64.rpm
+544      sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-atk-2.22.0-2.el7.x86_64.rpm
+545      sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-core-2.22.0-1.el7.x86_64.rpm
+546      sudo rpm -ivh --nodeps http://dl.fedoraproject.org/pub/archive/fedora/linux/releases/20/Fedora/x86_64/os/Packages
+547      sudo rpm -ivh --nodeps http://dl.fedoraproject.org/pub/archive/fedora/linux/releases/20/Fedora/x86_64/os/Packages/g/GConf2-3.2.6-7.fc20.x86_64.rpm
+548      sudo rpm -ivh --nodeps http://dl.fedoraproject.org/pub/archive/fedora/linux/releases/20/Fedora/x86_64/os/Packages/l/libXScrnSaver-1.2.2-6.fc20.x86_64.rpm
+549      sudo rpm -ivh --nodeps http://dl.fedoraproject.org/pub/archive/fedora/linux/releases/20/Fedora/x86_64/os/Packages/l/libxkbcommon-0.3.1-1.fc20.x86_64.rpm
+550      sudo rpm -ivh --nodeps http://dl.fedoraproject.org/pub/archive/fedora/linux/releases/20/Fedora/x86_64/os/Packages/l/libwayland-client-1.2.0-3.fc20.x86_64.rpm
+551      sudo rpm -ivh --nodeps http://dl.fedoraproject.org/pub/archive/fedora/linux/releases/20/Fedora/x86_64/os/Packages/l/libwayland-cursor-1.2.0-3.fc20.x86_64.rpm
+552      sudo rpm -ivh --nodeps http://dl.fedoraproject.org/pub/archive/fedora/linux/releases/20/Fedora/x86_64/os/Packages/g/gtk3-3.10.4-1.fc20.x86_64.rpm
+553      sudo rpm -ivh --nodeps http://dl.fedoraproject.org/pub/archive/fedora/linux/releases/16/Fedora/x86_64/os/Packages/gdk-pixbuf2-2.24.0-1.fc16.x86_64.rpm
+554      ldd chrome | grep not
+555      sudo yum install cups-libs
+556      ldd chrome | grep not
+557      sudo yum install cups-libs /chrome --headless --disable-gpu --screenshot https://www.chromestatus.com/
+558      ./chrome --headless --disable-gpu --screenshot https://www.chromestatus.com/
