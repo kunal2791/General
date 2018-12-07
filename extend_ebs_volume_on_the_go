@@ -1,0 +1,13 @@
+//For ext2, text3, ext4 file systems
+
+$sudo file -s /dev/xvd*
+
+To check if your volume partition needs resizing:
+$lsblk
+
+Expand the modified partition using growpart:
+$sudo growpart /dev/xvdf 1
+
+To extend a Linux file system:
+$ sudo resize2fs /dev/xvdf1
+
