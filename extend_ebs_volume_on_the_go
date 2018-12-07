@@ -11,3 +11,5 @@ $sudo growpart /dev/xvdf 1
 To extend a Linux file system:
 $ sudo resize2fs /dev/xvdf1
 
+References:- https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/recognize-expanded-volume-linux.html
+
